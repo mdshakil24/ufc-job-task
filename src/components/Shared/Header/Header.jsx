@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { IoChevronDownSharp } from "react-icons/io5";
 
 const Header = () => {
+
+    const [openIcon,setOpenIcon] = useState(false);
+    const [openMenu,setOpenMenu] = useState(false);
+
+
     return (
         <header className="ufc-header-area">
             <div className="container">
@@ -18,7 +23,7 @@ const Header = () => {
                         {/* header top */}
                         <div className="header-right-top-content">
                             <nav className="rfc-nav-menu">
-                                <ul>
+                                <ul className={`${openMenu ? "showMenu" : ""}`}>
                                     <li><a className="link" href="#">Home</a></li>
                                     <li><a href="#">Category <IoChevronDownSharp /></a>
                                         <div className="dropdown-content">
@@ -59,6 +64,17 @@ const Header = () => {
 
                     </div>
                     {/*=== header right ===*/}
+
+                    {/*=== mobile menu icon ===*/}
+                    <div onClick={() => setOpenMenu(!openMenu)} className="mobile-menu-icon">
+                        <div onClick={() => setOpenIcon(!openIcon)} className={`all-p-humber ${openIcon ? "open" : ""}`}>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    {/*=== mobile menu icon ===*/}
 
                 </div>
             </div>
