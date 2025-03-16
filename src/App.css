@@ -1,7 +1,6 @@
 /*===== Start Header Area Css =====*/
 .ufc-header-area {
-    background-color: #0a0f24;
-    /* position: absolute; */
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -220,6 +219,100 @@
 
 /*===== End Header Area Css =====*/
 
+/*===== Start Hero Area Css =====*/
+.ufc-hero-area {
+    background: url('/hero/hero-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 200px 0 485px;
+    position: relative;
+    z-index: 1;
+}
+
+.ufc-hero-area::before {
+    content: '';
+    position: absolute;
+    background: url('/hero/before.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 735px;
+    left: 0;
+    bottom: 10px;
+    z-index: -1;
+}
+
+.ufc-hero-left-text-content {
+    max-width: 500px;
+    padding-top: 40px;
+}
+
+.ufc-hero-right-image-content {
+    display: none;
+}
+
+.gradient-border-button {
+    font-size: 22px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background: #21242D;
+    padding: 18px 30px;
+    border-radius: 50px;
+    position: relative;
+    display: inline-block;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-top: 40px;
+}
+
+/* Gradient border using pseudo-element */
+.gradient-border-button::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    /* Covers full button */
+    border-radius: 50px;
+    padding: 2px;
+    /* Border thickness */
+    background: linear-gradient(90deg, #ff4d95, #4d76ff);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+}
+
+/* Adding a hover effect (optional, but no bg gradient) */
+.gradient-border-button:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 10px rgba(255, 77, 149, 0.5);
+}
+
+
+
+
+
+/*===== End Hero Area Css =====*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*===== Start Footer Area Css =====*/
 .ufc-footer-area {
@@ -229,6 +322,7 @@
     background-color: #1C1C1C;
     padding: 80px 0 0;
 }
+
 .ufc-top-footer-content {
     display: flex;
     flex-direction: row;
@@ -238,7 +332,9 @@
 .ufc-top-footer-left-content {
     flex: 0 0 40%;
 }
-.ufc-top-footer-middle-content, .ufc-top-footer-right-content {
+
+.ufc-top-footer-middle-content,
+.ufc-top-footer-right-content {
     flex: 0 0 30%;
     padding: 10px 0;
     padding-left: 80px;
@@ -250,12 +346,14 @@
 .single-ufc-top-footer-content img {
     margin-right: 10px;
 }
+
 .single-ufc-top-footer-content p {
     font-weight: 400;
     font-size: 12px;
     color: #FFFFFF;
     text-transform: capitalize;
 }
+
 .single-ufc-top-footer-content a {
     font-weight: 400;
     font-size: 16px;
@@ -266,6 +364,7 @@
     display: block;
     transition: .3s;
 }
+
 .single-ufc-top-footer-content a:hover {
     color: #000000;
 }
@@ -297,7 +396,8 @@
     padding: 10px 20px;
     color: white;
     font-size: 18px;
-    background: #0a0a0a; /* Inner background color */
+    background: #0a0a0a;
+    /* Inner background color */
     border-radius: 15px;
     display: inline-block;
 }
@@ -310,7 +410,8 @@
     right: -5px;
     bottom: -5px;
     background: linear-gradient(45deg, #ff0000, #ff7300, #ffeb00);
-    border-radius: 20px; /* Ensure it matches parent border-radius */
+    border-radius: 20px;
+    /* Ensure it matches parent border-radius */
     z-index: -1;
 }
 
@@ -336,6 +437,7 @@
     margin: 15px auto;
     line-height: 1.5;
 }
+
 .ufc-top-footer-left-input-field {
     padding: 10px 20px;
     border: 1px solid #FFFFFF;
@@ -346,6 +448,7 @@
     border-radius: 8px;
     box-sizing: border-box;
 }
+
 .ufc-top-footer-left-input-field input {
     font-weight: 400;
     font-size: 16px;
@@ -357,9 +460,11 @@
     padding: 5px 0;
     width: 100%;
 }
+
 .ufc-top-footer-left-input-field input::placeholder {
     color: #FFFFFF;
 }
+
 .ufc-top-footer-left-input-field button {
     background: transparent;
     border: none;
@@ -378,10 +483,12 @@
 
     flex: 0 0 40%;
 }
+
 .ufc-middle-footer-left-img {
     max-width: 380px;
     text-align: center;
 }
+
 .ufc-middle-footer-left-content img {
 
     height: 105px;
@@ -404,16 +511,20 @@
     margin-right: 10px;
 
 }
+
 .ufc-middle-footer-right-socials a img {
     height: 15px;
     width: auto;
 }
+
 .ufc-middle-footer-right-text {
     margin-top: 25px;
 }
+
 .ufc-middle-footer-right-text img {
     height: 72px;
 }
+
 .ufc-middle-footer-right-text p {
     font-weight: 400;
     font-size: 16px;
@@ -433,7 +544,27 @@
 /*==========*****       START MOBILE RESPONSIVE CSS       *****==========*/
 /*==============================*****====================================*/
 
+/*===== Minimum Width Code  =====*/
+@media all and (min-width: 3000px) {
+    .ufc-hero-area::before {
+        bottom: 0;
+    }
+}
+
+@media all and (min-width: 1700px) {
+    .ufc-hero-area {
+        background-size: contain;
+    }
+}
+
+
+/*===== Maximum Width Code  =====*/
+
 @media all and (max-width: 1199px) {
+    h1 {
+        font-size: 71px;
+    }
+
 
 }
 
@@ -450,21 +581,66 @@
     .rfc-nav-menu ul li a svg {
         font-size: 22px;
     }
-    .ufc-top-footer-middle-content, .ufc-top-footer-right-content {
+
+    .ufc-top-footer-middle-content,
+    .ufc-top-footer-right-content {
         padding-left: 35px;
     }
 
+    .ufc-hero-left-text-content {
+        max-width: 100%;
+    }
+
+    .ufc-hero-area {
+        padding: 150px 0 485px;
+    }
+
+    .ufc-hero-area {
+        background: url('/hero/hero-mobile.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .ufc-hero-area::before {
+        height: 660px;
+        left: 0;
+        bottom: 125px;
+        z-index: 1;
+        transform: rotate(6deg);
+    }
+
+    .ufc-hero-right-image-content {
+        display: block;
+        margin-top: 20px;
+    }
+
+    .ufc-hero-right-image-content img {
+        width: 100%;
+        height: auto;
+    }
 
 
 }
 
 @media all and (max-width: 767px) {
+    h1 {
+        font-size: 60px;
+    }
+
+    .ufc-hero-area::before {
+        height: 570px;
+        bottom: 180px;
+    }
+
     .header-right {
         display: none;
     }
+
     .mobile-menu-icon {
         display: block;
     }
+
     .rfc-nav-menu ul {
         background-color: #0a0f24;
         padding: 20px 0;
@@ -473,28 +649,33 @@
         width: 100%;
         justify-content: center;
         left: 0;
-        top: 150px;
+        top: 175px;
         visibility: hidden;
         opacity: 0;
         z-index: 5;
         transition: .3s;
     }
+
     .rfc-nav-menu ul li a {
         display: flex;
         justify-content: space-between;
     }
+
     .rfc-nav-menu ul li {
         width: 100%;
         padding: 5px 0;
         border-bottom: 1px solid #FFFFFF;
     }
+
     .rfc-nav-menu ul li:last-child {
         border-bottom: 0;
     }
+
     .rfc-nav-menu ul.showMenu {
         visibility: visible;
         opacity: 1;
     }
+
     .rfc-nav-menu ul li a {
         margin-right: 0;
     }
@@ -525,31 +706,40 @@
     .ufc-footer-area {
         padding: 60px 0 0;
     }
+
     .ufc-top-footer-left-content {
         flex: 0 0 100%;
     }
-    .ufc-top-footer-middle-content, .ufc-top-footer-right-content {
+
+    .ufc-top-footer-middle-content,
+    .ufc-top-footer-right-content {
         flex: 0 0 50%;
         margin-top: 30px;
         padding-left: 0;
     }
+
     .ufc-top-footer-left-txt-input {
         max-width: 100%;
     }
+
     .ufc-middle-footer-content {
         flex-direction: column-reverse;
         align-items: flex-start;
     }
+
     .ufc-middle-footer-right-content {
         flex: 0 0 100%;
         padding-left: 0;
     }
+
     .ufc-middle-footer-right-text p {
         width: 100%;
     }
+
     .ufc-middle-footer-left-content img {
         margin-top: 20px;
     }
+
     .ufc-middle-footer-content {
         margin-top: 30px;
         margin-bottom: 0;
@@ -559,19 +749,57 @@
 }
 
 @media all and (max-width: 575px) {
+
+    h1 {
+        font-size: 55px;
+    }
+
+
     .header-right-bottom-content {
         left: 30%;
     }
+
     .ufc-top-footer-left-txt-input h3 {
         font-size: 35px;
     }
+
+    .gradient-border-button {
+        font-size: 18px;
+        padding: 15px 30px;
+        margin-top: 30px;
+    }
+
+    .ufc-hero-area::before {
+        height: 435px;
+        bottom: 260px;
+    }
+
 
 
 }
 
 @media all and (max-width: 450px) {
+    h1 {
+        font-size: 45px;
+    }
+
+    .ufc-hero-area {
+        padding: 135px 0 485px;
+    }
+
+    .ufc-hero-area::before {
+        height: 300px;
+        bottom: 330px;
+    }
+
     .ufc-header-area {
         padding: 20px 0;
+    }
+
+    .gradient-border-button {
+        font-size: 16px;
+        padding: 13px 25px;
+        margin-top: 25px;
     }
 
     .header-left-logo img {
@@ -596,42 +824,59 @@
     .ufc-middle-footer-right-text img {
         height: 55px;
     }
+
     .ufc-middle-footer-right-text p {
         font-size: 14px;
     }
+
     .ufc-middle-footer-left-content img {
         height: 85px;
     }
+
     .ufc-top-footer-left-txt-input h3 {
         font-size: 30px;
     }
+
     .ufc-top-footer-left-input-field input {
         font-size: 15px;
     }
+
     .ufc-top-footer-left-txt-input {
         padding: 25px 19px;
     }
+
     .ufc-top-footer-left-input-field {
         padding: 8px 15px;
     }
+
     .single-ufc-top-footer-content a {
         font-size: 15px;
         margin-top: 15px;
     }
+
     .ufc-top-footer-middle-content .single-ufc-top-footer-content:last-child {
         margin-top: 35px;
     }
+
     .ufc-top-footer-middle-content {
         margin-top: 25px;
     }
+
     .ufc-top-footer-right-content {
-        margin-top: 20px; 
+        margin-top: 20px;
     }
-    .ufc-top-footer-middle-content, .ufc-top-footer-right-content {
+
+    .ufc-top-footer-middle-content,
+    .ufc-top-footer-right-content {
         flex: 0 0 100%;
     }
+
     .ufc-footer-area {
         padding: 50px 0 0;
+    }
+
+    .ufc-hero-left-text-content {
+        padding-top: 0;
     }
 
 

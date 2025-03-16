@@ -5,6 +5,7 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
   font-family: 'Neue Montreal';
+  background-color: #1C1C1C;
 }
 .impact {
   font-family: 'Impact';
@@ -52,6 +53,24 @@ li {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+h1,h2,h3 {
+  font-family: 'Impact';
+  font-weight: 400;
+  font-size: 80px;
+  color: #FFFFFF;
+  text-transform: inherit;
+}
+
+h2 {
+  font-size: 58px;
+}
+h3 {
+  font-size: 80px;
+}
+h1 span ,h2 span,  h3 span {
+  color: #E8C26D;
 }
 
 button {
