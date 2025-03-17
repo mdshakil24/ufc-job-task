@@ -78,9 +78,15 @@ h3 {
 }
 
 h1 span,
-h2 span,
+h2 span {
+  color: #E8C26D;
+}
 h3 span {
   color: #E8C26D;
+  background: linear-gradient(to bottom, #c8943b, #ffcc70);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
 }
 
  h4 {

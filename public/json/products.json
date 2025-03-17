@@ -1,0 +1,75 @@
+[
+  {
+    "id": "p1",
+    "name": "Retarutide",
+    "category": "Research use only",
+    "price": 39.99,
+    "billing": "per month",
+    "image": "/products/p1.png",
+    "cart": "/icons/b-cart.png"
+  },
+  {
+    "id": "p2",
+    "name": "Lyophilized Glow (GHK-CU/ BPC-157/ TB-500)",
+    "category": "Research use only",
+    "price": 39.99,
+    "billing": "per month",
+    "image": "/products/p2.png",
+    "cart": "/icons/b-cart.png"
+  },
+  {
+    "id": "p3",
+    "name": "Compounded Sermorelin 15mg",
+    "category": "Recurring Plan",
+    "price": 179,
+    "additional_cost": "$45 Physician consult",
+    "billing": "Monthly",
+    "image": "/products/p3.png",
+    "cart": "/icons/b-cart.png"
+  },
+  {
+    "id": "p4",
+    "name": "2X CJC / Ipamorelin",
+    "price": 149,
+    "additional_cost": "$45 Physician consult + $100 Lab Charge",
+    "billing": "Monthly",
+    "image": "/products/p4.png",
+    "cart": "/icons/b-cart.png"
+  },
+  {
+    "id": "p5",
+    "name": "Lyophilized Oxytocin",
+    "price": 39.99,
+    "billing": "per month",
+    "image": "/products/p5.png",
+    "cart": "/icons/b-cart.png"
+  },
+  {
+    "id": "p6",
+    "name": "Lyophilized Finasteride 1mg",
+    "category": "Recurring Plan",
+    "price": 39.99,
+    "billing": "per month",
+    "image": "/products/p6.png",
+    "cart": "/icons/b-cart.png"
+  },
+  {
+    "id": "p7",
+    "name": "Compounded NAD+ 1000 mg",
+    "price": 179,
+    "additional_cost": "$45 Physician consult",
+    "billing": "Monthly",
+    "image": "/products/p7.png",
+    "cart": "/icons/b-cart.png"
+  },
+  {
+    "id": "p8",
+    "name": "Lyophilized PT-141 10mg",
+    "category": "Recurring Plan",
+    "price": 149,
+    "additional_cost": "$45 Physician consult + $100 Lab Charge",
+    "billing": "Monthly",
+    "image": "/products/p8.png",
+    "cart": "/icons/b-cart.png"
+  }
+]

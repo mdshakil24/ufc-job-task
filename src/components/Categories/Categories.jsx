@@ -12,7 +12,6 @@ const Categories = () => {
             .get("https://raw.githubusercontent.com/mdshakil24/ufc-categories/refs/heads/main/categories.json")
             .then(response => {
                 setCategories(response.data.slice(0, 6))
-                console.log(response)
             })
             .catch((error) => console.error("Error fetching data:", error));
     }, [])
