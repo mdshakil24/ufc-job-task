@@ -431,6 +431,7 @@
 .ufc-products-area {
     padding: 160px 0;
 }
+
 .ufc-product-filter-button {
     display: flex;
     flex-direction: row;
@@ -439,6 +440,7 @@
     gap: 10px;
     margin-bottom: 60px;
 }
+
 .ufc-product-filter-button button {
     font-weight: 400;
     font-size: 16px;
@@ -451,22 +453,27 @@
     border-radius: 40px;
     transition: .3s;
 }
-.ufc-product-filter-button button:hover,.ufc-product-filter-button button.active {
+
+.ufc-product-filter-button button:hover,
+.ufc-product-filter-button button.active {
     background-color: #E1C06E;
     color: #1F1F1F;
     border: 1px solid #E1C06E;
 }
+
 .all-ufc-product-content {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
+
 .single-ufc-product {
     background-color: rgba(49, 65, 140, 0.3);
     border-radius: 12px;
     position: relative;
     min-height: 255px;
 }
+
 .single-ufc-category-btn button {
     font-weight: 400;
     font-size: 13px;
@@ -492,12 +499,15 @@
     border-bottom: 1px solid #D58A6B;
 
 }
+
 .single-ufc-product-img-text {
     padding-top: 22px;
 }
+
 .single-ufc-product-img-text.flex {
     justify-content: center;
 }
+
 .single-ufc-product-text h5 {
     font-weight: 500;
     font-size: 18px;
@@ -530,6 +540,7 @@
     padding: 20px 0;
     padding-left: 25px;
 }
+
 .single-ufc-product-price-cart a {
     background: linear-gradient(to bottom, #c8943b, #ffcc70);
     padding: 20px 30px;
@@ -539,9 +550,138 @@
 /*===== End Products Area Css =====*/
 
 
+/*===== Start Convenience Area Css =====*/
+
+.ufc-convenience-area {
+    background: url('/convenience.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 95px;
+    padding-bottom: 560px;
+    margin-top: -300px;
+    position: relative;
+}
+
+.ufc-convenience-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.ufc-convenience-left-content {
+    flex: 0 0 55%;
+}
+
+.ufc-convenience-right-content {
+    flex: 0 0 45%;
+}
+
+.single-ufc-convenience-right {
+    margin-bottom: 18px;
+}
+
+.single-ufc-convenience-right p {
+    margin-left: 20px;
+}
 
 
+/*===== End Convenience Area Css =====*/
 
+/*===== Start Testimonials Area Css =====*/
+.ufc-testimonials-area {
+    background: url('/bg-artwork.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* background-size: cover; */
+    background-position: center;
+    padding-top: 600px;
+    padding-bottom: 630px;
+    margin-top: -450px;
+}
+
+
+.ufc-testimonials-area h3 {
+    text-align: center;
+}
+
+.ufc-testimonial-card {
+    background: url('/testimoinals/item-bg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 50px 30px 40px;
+}
+
+.testimonial-quote {
+    margin-bottom: 15px;
+}
+
+.ufc-testimonial-card p {
+    line-height: 1.5;
+}
+
+.ufc-testimonial-card .stars {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.ufc-testimonial-card .stars img {
+    width: 24px;
+    height: auto;
+    margin: 0 3px;
+}
+
+.ufc-testimonial-card .profile {
+    display: flex;
+    align-items: center;
+}
+
+.ufc-testimonial-card .profile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.ufc-testimonial-card .profile h4 {
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+}
+
+.ufc-testimonial-card .profile p {
+    font-weight: 700;
+    font-size: 16px;
+    color: #A18F90;
+    text-transform: capitalize;
+    margin-top: 8px;
+}
+
+.swiper-pagination-bullet {
+    background: #3B3B41;
+    width: 16px;
+    height: 16px;
+    margin: 0 10px !important;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #B9B8B8;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+}
+.swiper-backface-hidden .swiper-slide {
+    margin-bottom: 60px;
+}
+
+
+/*===== End Testimonials Area Css =====*/
 
 
 
@@ -557,6 +697,7 @@
     background-size: 100% 100%;
     background-color: #1C1C1C;
     padding: 80px 0 0;
+    margin-top: -500px;
 }
 
 .ufc-top-footer-content {
@@ -922,11 +1063,29 @@
         padding-bottom: 100px;
     }
 
+    .ufc-convenience-content {
+        flex-direction: column;
+    }
+
+    .ufc-convenience-right-content {
+        flex: 0 0 100%;
+        margin-top: 30px;
+    }
+
+    .ufc-convenience-area {
+        padding-top: 70px;
+        padding-bottom: 400px;
+    }
+
 }
 
 @media all and (max-width: 767px) {
     h1 {
         font-size: 60px;
+    }
+
+    h2 {
+        font-size: 50px;
     }
 
     h3 {
@@ -1082,6 +1241,22 @@
         padding-bottom: 80px;
     }
 
+    .ufc-convenience-area {
+        padding-top: 50px;
+        padding-bottom: 200px;
+    }
+    .ufc-testimonial-card p {
+        font-size: 16px;
+    }
+    .ufc-testimonial-card .stars img {
+        width: 20px;
+
+    }
+    .ufc-testimonial-card .profile img {
+        width: 50px;
+        height: 50px;
+    }
+
 
 }
 
@@ -1089,6 +1264,10 @@
 
     h1 {
         font-size: 55px;
+    }
+
+    h2 {
+        font-size: 45px;
     }
 
 
@@ -1144,6 +1323,10 @@
         font-size: 17px;
     }
 
+    .ufc-convenience-area {
+        padding-bottom: 100px;
+    }
+
 }
 
 @media all and (max-width: 450px) {
@@ -1151,9 +1334,17 @@
         font-size: 45px;
     }
 
+    h2 {
+        font-size: 38px;
+    }
+
     h3 {
         font-size: 34px;
         margin-bottom: 35px;
+    }
+
+    p {
+        font-size: 15px;
     }
 
     .ufc-category-area {
