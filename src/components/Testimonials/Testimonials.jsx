@@ -59,16 +59,20 @@ const Testimonials = () => {
                 <Swiper
                     modules={[Pagination, Navigation]}
                     spaceBetween={20}
-                    slidesPerView={4}
+                    slidesPerView={1.2}
                     loop={true}
-                    centeredSlides={true}
                     pagination={{ clickable: true }}
                     navigation={false}
+                    slidesOffsetBefore={16}
                     breakpoints={{
-                        451: { slidePerView: 1 },
-                        768: { slidesPerView: 2 },
-                        992: { slidesPerView: 3 },
-                        1200: { slidesPerView: 4 },
+                        451: { slidesPerView: 1,centeredSlides:false }, // Fixed key
+                        768: {
+                            slidesPerView: 2,
+                            centeredSlides: true,
+                            lidesOffsetBefore: 0,
+                        }, // Fixed key
+                        992: { slidesPerView: 3 }, // Fixed key
+                        1200: { slidesPerView: 4 }, // Fixed key
                     }}
                 >
                     {testimonials.map((testimonial, index) => (

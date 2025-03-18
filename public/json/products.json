@@ -6,7 +6,8 @@
     "price": 39.99,
     "billing": "per month",
     "image": "/products/p1.png",
-    "cart": "/icons/b-cart.png"
+    "cart": "/icons/b-cart.png",
+    "search": "Best Selling Products"
   },
   {
     "id": "p2",
@@ -15,7 +16,9 @@
     "price": 39.99,
     "billing": "per month",
     "image": "/products/p2.png",
-    "cart": "/icons/b-cart.png"
+    "cart": "/icons/b-cart.png",
+    "search": "Best Selling Products"
+
   },
   {
     "id": "p3",
@@ -25,7 +28,8 @@
     "additional_cost": "$45 Physician consult",
     "billing": "Monthly",
     "image": "/products/p3.png",
-    "cart": "/icons/b-cart.png"
+    "cart": "/icons/b-cart.png",
+    "search": "Best Selling Products"
   },
   {
     "id": "p4",
@@ -34,7 +38,8 @@
     "additional_cost": "$45 Physician consult + $100 Lab Charge",
     "billing": "Monthly",
     "image": "/products/p4.png",
-    "cart": "/icons/b-cart.png"
+    "cart": "/icons/b-cart.png",
+    "search": "Weight Loss"
   },
   {
     "id": "p5",
@@ -42,7 +47,8 @@
     "price": 39.99,
     "billing": "per month",
     "image": "/products/p5.png",
-    "cart": "/icons/b-cart.png"
+    "cart": "/icons/b-cart.png",
+     "search": "Weight Loss"
   },
   {
     "id": "p6",
@@ -51,7 +57,8 @@
     "price": 39.99,
     "billing": "per month",
     "image": "/products/p6.png",
-    "cart": "/icons/b-cart.png"
+    "cart": "/icons/b-cart.png",
+     "search": "Beauty And Hair Loss"
   },
   {
     "id": "p7",
@@ -60,7 +67,8 @@
     "additional_cost": "$45 Physician consult",
     "billing": "Monthly",
     "image": "/products/p7.png",
-    "cart": "/icons/b-cart.png"
+    "cart": "/icons/b-cart.png",
+     "search": "Beauty And Hair Loss"
   },
   {
     "id": "p8",
@@ -70,6 +78,46 @@
     "additional_cost": "$45 Physician consult + $100 Lab Charge",
     "billing": "Monthly",
     "image": "/products/p8.png",
-    "cart": "/icons/b-cart.png"
+    "cart": "/icons/b-cart.png",
+    "search": "Testosterone/HRT"
+  },
+  {
+    "id": "p9",
+    "name": "2X CJC / Ipamorelin",
+    "price": 149,
+    "additional_cost": "$45 Physician consult + $100 Lab Charge",
+    "billing": "Monthly",
+    "image": "/products/p4.png",
+    "cart": "/icons/b-cart.png",
+     "search": "Testosterone/HRT"
+  },
+  {
+    "id": "p10",
+    "name": "Lyophilized Oxytocin",
+    "price": 39.99,
+    "billing": "per month",
+    "image": "/products/p5.png",
+    "cart": "/icons/b-cart.png",
+    "search": "Sexual Health"  
+  },
+  {
+    "id": "p11",
+    "name": "Lyophilized Finasteride 1mg",
+    "category": "Recurring Plan",
+    "price": 39.99,
+    "billing": "per month",
+    "image": "/products/p6.png",
+    "cart": "/icons/b-cart.png",
+    "search": "Sexual Health"  
+  },
+  {
+    "id": "p12",
+    "name": "Compounded NAD+ 1000 mg",
+    "price": 179,
+    "additional_cost": "$45 Physician consult",
+    "billing": "Monthly",
+    "image": "/products/p7.png",
+    "cart": "/icons/b-cart.png",
+    "search": "Sexual Health"  
   }
 ]
